@@ -37,6 +37,12 @@ public static void Swap() {
 * CSS for beginners on [ru.code-basics.com](https://ru.code-basics.com/languages/css) (completed)   
 * JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/) (in progress)    
 * RS Schools Course «JavaScript/Front-end. Stage 1» (in progress) 
-* Introduction to Java Online on [training.by](https://training.by/#!/Training/2397?lang=ru) (in progress)    
+* Introduction to Java Online on [training.by](https://training.by/#!/Training/2397?lang=ru) (in progress)   
+## Languages:
+* English - Intermediate/Upper-intermediate (according to the online test at [EFset]( Intermediate/Upper-intermediate (according to the online test at EFset Logo www.efset.org)  
+![my english test result](/images/markdown/englishtest.png) 
+* Russian - Native    
+* Belarusian - Native  
+* German - Beginner  
 
 
