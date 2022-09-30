@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <script>
+
+
+function nthFibo(n) {
+  // Return the n-th number in the Fibonacci Sequence
+ 
+   let fibo = [];
+
+   fibo [0] = 0;
+   fibo[1] = 1;
+
+   for (let i = 2; i <= n; i++) {
+       fibo [i] = fibo[(i-2)] + fibo[(i-1)];
+
+   }
+
+   return fibo[(n - 1)];
+
+}
+
+function formatDuration (seconds) {
+  // Complete this function
+
+  let message = '';
+  let years = 0;
+  let days = 0;
+  let hours = 0;
+  let minutes = 0;
+  let forSeconds = 0;
+
+
+  //years
+   years = Math.floor(seconds / 31536000);
+   seconds = seconds - (31536000 * years);
+
+   //days
+if (seconds > 0) {
+   days = Math.floor(seconds / 86400);
+   seconds = seconds - (86400 * days);
+}
+
+//hours
+if (seconds > 0) {
+  hours = Math.floor(seconds / 3600);
+  seconds = seconds - (3600 * hours);
+}
+
+//minutes
+if ((seconds > 0) ) {
+  minutes = Math.floor(seconds / 60);
+  seconds = seconds - (60 * minutes);
+}
+
+
+//output message
+if ((years > 0) && (years < 10) {
+  message = message + years + " year, ";
+    }
+else if ((years > 0) && (years > 10)) {
+    message = message + years + " years, ";
+}
+else if ((years == 0) && (days == 0) && (hours > 0)) {
+  message = hours + " hours, " + minutes + " minute and " + seconds + " seconds";
+}
+else if ((years == 0) && (days == 0) && (hours == 0) && (minutes > 0)) {
+  message = minutes + " minute and " + seconds + " seconds";
+}
+else if ((years == 0) && (days == 0) && (hours == 0) && (minutes == 0) && (seconds > 0) ) {
+  message = seconds + " seconds";
+}
+
+return message;
+       
+   
+}
+
+
+console.log(formatDuration(28820));
+ </script>
